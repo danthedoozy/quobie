@@ -1,0 +1,61 @@
+Quobie
+Discuss your favorite book quotes (Genius for books).
+
+1. A library/database of great book quotes
+2. Search quotes by content, book, author, or book genre
+3. Add quotes to the database that haven't been added yet
+4. Each quote has its own page, complete with discussions, likes/upvotes, and sharing
+5. Add quotes to your personal collection/board
+
+
+quote {
+  id: number,
+  title: !string,
+  page: number,
+  line: number,
+  author: !string,
+  genre: string, (romance, scifi, prose, non-fiction, poetry, etc.)
+  type: string, (inspiration, motivation, prose, poetry, etc.)
+  content: !string,
+  user: id,
+  claps: number,
+  flags: number,
+  comments: array,
+}
+
+user {
+  id: number,
+  name: string,
+  collections: object,
+}
+
+collection {
+  id: number,
+  userId: number,
+  quotes: array,
+}
+
+comment {
+  id: number,
+  content: string,
+  author: string,
+  claps: number,
+  flags: number,
+  hidden: boolean,
+}
+
+
+Special Functions
+1. Camel-casing titles
+2. Duplicate checkers
+3. Detecting and deleting external links
+4. Search
+5. Sort by (popularity, word match, etc.)
+
+
+MVP
+1. Quotes displaying all meta-data (sorting and searching in the future)
+2. Add quotes
+3. Comment
+4. Clap
+5. Report
