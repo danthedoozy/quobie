@@ -1,7 +1,7 @@
 # Quobie
 
 ## Description
-Quobie is the best place to discuss, share, or discover your favorite book quotes. You can search by title, author, genre, and content.
+Discover & discuss snippets of great literature.
 
 ## Available Scripts
 
