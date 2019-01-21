@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+.navbar {
+  background-color: #00d1b2;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  font-family: 'Bitter', cursive;
+  font-size: 20px;
+}
+.navbar-brand .brand {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.add-button {
+  background-color: Transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 7px 10px 5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Aleo', serif;
+}
+.add-button:hover {
+  background-color: #ffffff;
+  color: #00d1b2;
+  cursor: pointer;
+}

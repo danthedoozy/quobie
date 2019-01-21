@@ -16,31 +16,19 @@ const Quote = ({
     }
 }) => (
   <div class="quote">
-    <div class="content">
-      <h3>&ldquo;{content}&rdquo;</h3>
-      <hr />
-      <div className="columns">
-        <div className="column">
-          <p className="strong">{title}</p>
-          <p className="small">by {author}</p>
-          <p className="small">page {page}, line {line}</p>
-        </div>
-        <div className="column">
-          <p>
-            <span className="tag is-primary">{type}</span>&nbsp;
-            <span className="tag is-warning">{genre}</span>
-          </p>
-          <div className="columns">
-            <div className="column">
-              <p className="small">👏 {claps}</p>
-            </div>
-            <div className="column">
-              <button className="button is-small">Comment</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h3>&ldquo;{content}&rdquo;</h3>
+    <hr />
+    <p>{title}</p>
+    <p className="small">by {author}</p>
+    <p className="small">page {page}, line {line}</p>
+    <p>
+      <span className="tag small">{type}</span>&nbsp;
+      <span className="tag small">{genre}</span>
+    </p>
+    <p className="small">👏 {claps}</p>
+    <button className="button is-small">Join discussion</button>
+    <button className="button is-small">Share</button>
+    <button className="button is-small">Purchase book</button>
   </div>
 );
 

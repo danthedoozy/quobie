@@ -1,11 +1,7 @@
 import React from 'react';
 
 const AddQuote = () => (
-  <div className="buttons">
-    <a className="button is-primary is-outlined is-inverted">
-      <strong>Add +</strong>
-    </a>
-  </div>
+  <button className="add-button" type="button"> Add + </button>
 );
 
 export default AddQuote;
