@@ -18,17 +18,37 @@ const Quote = ({
   <div class="quote">
     <h3>&ldquo;{content}&rdquo;</h3>
     <hr />
-    <p>{title}</p>
-    <p className="small">by {author}</p>
-    <p className="small">page {page}, line {line}</p>
-    <p>
-      <span className="tag small">{type}</span>&nbsp;
-      <span className="tag small">{genre}</span>
-    </p>
-    <p className="small">👏 {claps}</p>
-    <button className="button is-small">Join discussion</button>
-    <button className="button is-small">Share</button>
-    <button className="button is-small">Purchase book</button>
+    <div className="columns is-spaced-between">
+      <div className="column">
+        <p>{title}</p>
+        <p className="small">by {author}</p>
+        <p className="small">page {page}, line {line}</p>
+      </div>
+      <div className="column text-align-right">
+        <p>
+          <span className="tag small">{type}</span>
+        </p>
+        <p>
+          <span className="tag small">{genre}</span>
+        </p>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column">
+        <p className="small"><span role="img" aria-label="clap-emoji">👏</span> {claps}</p>
+      </div>
+      <div className="column">
+        <p className="small">Share</p>
+      </div>
+      <div className="column">
+        <p className="small">Report</p>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column">
+        <button className="button is-small">Join discussion</button>
+      </div>
+    </div>
   </div>
 );
 

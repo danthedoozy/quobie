@@ -9,6 +9,11 @@ body {
   background-color: #fafafa;
 }
 
+p {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,6 +23,19 @@ button {
 }
 button:focus {
   outline: 0;
+}
+
+.button {
+  background-color: #00d1b2;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 10px 4px;
+}
+.button:active {
+  background-color: #00c1a4;
 }
 
 hr {

@@ -36,7 +36,7 @@ export default  [
     author: 'Joni E. Driskill',
     genre: 'Sci-fi',
     type: 'Motivational',
-    content: 'The grass is greener on the other side.',
+    content: 'The grass is greener on the other side, unless, in actuality and reality, it is not.',
     claps: 23,
   },
   {

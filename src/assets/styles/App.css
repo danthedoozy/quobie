@@ -3,3 +3,34 @@
 .App {
   text-align: center;
 }
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.is-left {
+  justify-content: flex-start;
+}
+
+.is-right {
+  justify-content: flex-end;
+}
+
+.is-spaced-between {
+  justify-content: space-between;
+}
+
+.is-spaced-around {
+  justify-content: space-around;
+}
+
+.column {
+  padding: 0 5px;
+}
+
+.text-align-right {
+  text-align: right;
+}
