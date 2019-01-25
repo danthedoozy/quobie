@@ -55,7 +55,7 @@ export default  [
     line: '2',
     author: 'James C. Driskill',
     genre: 'Fantasy',
-    type: 'Prose',
+    type: 'Poetry',
     content: 'Long was the night...',
     claps: 7,
   },

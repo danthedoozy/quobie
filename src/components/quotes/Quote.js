@@ -18,7 +18,7 @@ const Quote = ({
   <div class="quote">
     <h3>&ldquo;{content}&rdquo;</h3>
     <hr />
-    <div className="columns is-spaced-between">
+    <div className="columns is-spaced-between pb2">
       <div className="column">
         <p>{title}</p>
         <p className="small">by {author}</p>
@@ -26,16 +26,20 @@ const Quote = ({
       </div>
       <div className="column text-align-right">
         <p>
-          <span className="tag small">{type}</span>
+          <span className="tag-purple small">{genre}</span>
         </p>
         <p>
-          <span className="tag small">{genre}</span>
+          <span className="tag-green small">{type}</span>
         </p>
       </div>
     </div>
     <div className="columns">
       <div className="column">
-        <p className="small"><span role="img" aria-label="clap-emoji">👏</span> {claps}</p>
+        <p className="small">
+          <span role="img" aria-label="clap-emoji" className="clap-emoji">
+            👏
+          </span> {claps}
+        </p>
       </div>
       <div className="column">
         <p className="small">Share</p>
