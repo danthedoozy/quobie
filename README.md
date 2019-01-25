@@ -1,7 +1,7 @@
 # Quobie
 
 ## Description
-Discover & discuss snippets of great literature.
+Share, discover, and discuss quotes from great literature.
 
 ## Available Scripts
 

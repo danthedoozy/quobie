@@ -7,7 +7,7 @@ import mock from '../services/mock';
 
 const Discover = () => (
   <section className="discover">
-    <p className="discover-headline">Discover & discuss quotes from great literature.</p>
+    <p className="discover-headline">Share, discover & discuss quotes from great literature.</p>
     <Quotes quotes={mock} />
   </section>
 );

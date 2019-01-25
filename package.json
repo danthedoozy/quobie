@@ -24,7 +24,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "Discover, share, and discuss quotes from the best books.",
+  "description": "Share, discover, and discuss quotes from great literature.",
   "main": "index.js",
   "devDependencies": {},
   "author": "Daniel K. Driskill",
