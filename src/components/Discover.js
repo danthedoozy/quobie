@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Quotes from './quotes/Quotes';
+
 import '../assets/styles/components/Discover.css';
 
 import mock from '../services/mock';

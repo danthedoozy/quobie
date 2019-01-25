@@ -1,7 +1,5 @@
 import React from 'react';
 
-import AddQuote from './mechanics/AddQuote';
-
 import '../assets/styles/components/Nav.css';
 
 const Nav = () => (
@@ -11,7 +9,7 @@ const Nav = () => (
         Quobie
       </a>
     </div>
-    <AddQuote />
+    <button className="add-button" type="button"> Add + </button>
   </nav>
 );
 

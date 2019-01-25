@@ -1,7 +1,9 @@
 import React from 'react';
 
 const AddQuote = () => (
-  <button className="add-button" type="button"> Add + </button>
+  <div className="add-quote-form">
+    AddQuote
+  </div>
 );
 
 export default AddQuote;

@@ -8,6 +8,7 @@ export default  [
     type: 'Motivational',
     content: 'The grass is greener on the other side.',
     claps: 23,
+    id: 1,
   },
   {
     title: "Righteous Living",
@@ -18,6 +19,7 @@ export default  [
     type: 'Inspirational',
     content: "Don't give monkeys machine guns.",
     claps: 8,
+    id: 2,
   },
   {
     title: "How to Train Your Dragon",
@@ -28,6 +30,7 @@ export default  [
     type: 'Prose',
     content: 'Long was the night...',
     claps: 7,
+    id: 3,
   },
   {
     title: "The Hefalump's Tale",
@@ -38,6 +41,7 @@ export default  [
     type: 'Motivational',
     content: 'The grass is greener on the other side, unless, in actuality and reality, it is not.',
     claps: 23,
+    id: 4,
   },
   {
     title: "Righteous Living",
@@ -48,6 +52,7 @@ export default  [
     type: 'Inspirational',
     content: "Don't give monkeys machine guns.",
     claps: 8,
+    id: 5,
   },
   {
     title: "How to Train Your Dragon",
@@ -58,5 +63,6 @@ export default  [
     type: 'Poetry',
     content: 'Long was the night...',
     claps: 7,
+    id: 6,
   },
 ];

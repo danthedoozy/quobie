@@ -4,18 +4,19 @@ import React from 'react';
 // Cards will also have a 'See More' clickable for long quotes
 
 const Quote = ({
-    quote: {
-      title,
-      page,
-      line,
-      author,
-      genre,
-      type,
-      content,
-      claps,
-    }
+  quote: {
+    title,
+    page,
+    line,
+    author,
+    genre,
+    type,
+    content,
+    claps,
+    id,
+  },
 }) => (
-  <div class="quote">
+  <div className="quote">
     <h3>&ldquo;{content}&rdquo;</h3>
     <hr />
     <div className="columns is-spaced-between pb2">
@@ -50,7 +51,7 @@ const Quote = ({
     </div>
     <div className="columns">
       <div className="column">
-        <button className="button is-small">Join discussion</button>
+        <button className="button is-small" type="button">Join discussion</button>
       </div>
     </div>
   </div>
