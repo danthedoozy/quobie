@@ -46,3 +46,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
+.red-text {
+  color: #ff3860;
+}

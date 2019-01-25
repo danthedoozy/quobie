@@ -43,9 +43,6 @@ const Quote = ({
         </p>
       </div>
       <div className="column">
-        <p className="small">Share</p>
-      </div>
-      <div className="column">
         <p className="small">Report</p>
       </div>
     </div>

@@ -1,10 +1,10 @@
 Quobie
 Discuss your favorite book quotes (Genius for books).
 
-1. A library/database of great book quotes
+1. A library/database of great literature quotes
 2. Search quotes by content, book, author, or book genre
 3. Add quotes to the database that haven't been added yet
-4. Each quote has its own page, complete with discussions, likes/upvotes, and sharing
+4. Each quote has its own page, complete with discussions, claps, and sharing on social media
 5. Add quotes to your personal collection/board
 
 
@@ -54,8 +54,14 @@ Special Functions
 
 
 MVP
-1. Quotes displaying all meta-data (sorting and searching in the future)
+1. Quotes displaying all meta-data
 2. Add quotes
 3. Comment
 4. Clap
 5. Report
+
+FUTURE FEATURES
+1. Searching and filtering options
+2. Save quotes to personal collections
+3. Sharing quotes on social media
+4. Other special functions (see above)

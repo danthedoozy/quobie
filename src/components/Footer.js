@@ -10,7 +10,7 @@ const Footer = () => (
         <small>All rights reserved.</small>
       </p>
       <p>
-        <a href="#">
+        <a href="/">
           <small>Terms of Use</small>
         </a>
       </p>
