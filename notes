@@ -49,7 +49,6 @@ Special Functions
 1. Camel-casing titles
 2. Duplicate checkers
 3. Detecting and deleting external links
-4. Search
 5. Sort by (popularity, word match, etc.)
 
 
@@ -60,8 +59,9 @@ MVP
 4. Clap
 5. Report
 
-FUTURE FEATURES
-1. Searching and filtering options
-2. Save quotes to personal collections
-3. Sharing quotes on social media
-4. Other special functions (see above)
+FUTURE FEATURES (in order)
+1. User accounts
+2. Sharing quotes on social media
+3. Search and filtering options
+4. Save quotes to personal collections
+5. Other special functions (see above)
