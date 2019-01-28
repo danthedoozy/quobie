@@ -26,16 +26,29 @@ button:focus {
 }
 
 .button {
-  background-color: #00d1b2;
-  color: #ffffff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   font-size: 14px;
   padding: 6px 10px 4px;
 }
-.button:active {
+
+.btn-primary {
+  background-color: #00d1b2;
+  color: #ffffff;
+}
+.btn-primary:active {
   background-color: #00c1a4;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #00d1b2;
+  border: 1px solid #00d1b2;
+}
+.btn-secondary:active {
+  background-color: #00d1b2;
+  color: #ffffff;
 }
 
 hr {

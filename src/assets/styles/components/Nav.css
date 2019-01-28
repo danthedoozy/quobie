@@ -15,6 +15,7 @@
 .navbar-brand .brand {
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .add-button {

@@ -1,6 +1,7 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-// Quote cards will have 'hover states' that reveal additional functionality
+// Quote cards could have 'hover states' that reveal additional functions
 // Cards will also have a 'See More' clickable for long quotes
 
 const Quote = ({
@@ -15,6 +16,7 @@ const Quote = ({
     claps,
     id,
   },
+  history,
 }) => (
   <div className="quote">
     <h3>&ldquo;{content}&rdquo;</h3>
@@ -48,10 +50,16 @@ const Quote = ({
     </div>
     <div className="columns">
       <div className="column">
-        <button className="button is-small" type="button">Join discussion</button>
+        <button
+          className="button btn-primary is-small"
+          type="button"
+          onClick={() => history.push('/discussion')}
+        >
+          Join discussion
+        </button>
       </div>
     </div>
   </div>
 );
 
-export default Quote;
+export default withRouter(Quote);
