@@ -5,15 +5,28 @@ import Discover from './Discover';
 import AddQuote from './AddQuote';
 import Discussion from './Discussion';
 import Footer from './Footer';
+import quotes from '../services/mock';
+import mockQuote from '../services/mockQuote';
 import '../assets/styles/App.css';
 
 class App extends Component {
   // This state is theoretical (we will likely add some state management)
   state = {
     user: {},
-    currentQuote: null, //Quote ID
+    currentQuote: mockQuote,
     clapCount: 0, // Figure out a way to allow only a certain number of claps per quote ID
   };
+
+  // Add a quote
+  addQuote = (newQuote) => {
+    console.log(newQuote);
+  }
+
+  // Pull active quote into state
+  selectQuote = id => {
+    const currentQuote = quotes.filter(quote => quote.id === id);
+    this.setState({ currentQuote });
+  }
 
   render() {
     const {
@@ -22,6 +35,8 @@ class App extends Component {
         currentQuote,
         clapCount,
       },
+      addQuote,
+      selectQuote,
     } = this;
 
     return (
@@ -33,15 +48,15 @@ class App extends Component {
                 <Route
                   exact
                   path="/"
-                  component={Discover}
+                  render={() => <Discover quotes={quotes} selectQuote={selectQuote}/>}
                 />
                 <Route
                   path="/add-quote"
-                  component={AddQuote}
+                  render={() => <AddQuote addQuote={addQuote} />}
                 />
                 <Route
                   path="/discussion"
-                  component={Discussion}
+                  render={() => <Discussion currentQuote={currentQuote} />}
                 />
               </Switch>
             <Footer />

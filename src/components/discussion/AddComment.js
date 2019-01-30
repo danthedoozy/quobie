@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AddComment = () => (
+const AddComment = ({ id }) => (
   <div>
-    Add comment
+    Add comment to quote with id {id}
   </div>
 );
 

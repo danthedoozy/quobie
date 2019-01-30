@@ -9,6 +9,26 @@ export default  [
     content: 'The grass is greener on the other side.',
     claps: 23,
     id: 1,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
   {
     title: "Righteous Living",
@@ -20,6 +40,26 @@ export default  [
     content: "Don't give monkeys machine guns.",
     claps: 8,
     id: 2,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
   {
     title: "How to Train Your Dragon",
@@ -31,6 +71,26 @@ export default  [
     content: 'Long was the night...',
     claps: 7,
     id: 3,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
   {
     title: "The Hefalump's Tale",
@@ -42,6 +102,26 @@ export default  [
     content: 'The grass is greener on the other side, unless, in actuality and reality, it is not.',
     claps: 23,
     id: 4,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
   {
     title: "Righteous Living",
@@ -53,6 +133,26 @@ export default  [
     content: "Don't give monkeys machine guns.",
     claps: 8,
     id: 5,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
   {
     title: "How to Train Your Dragon",
@@ -64,5 +164,25 @@ export default  [
     content: 'Long was the night...',
     claps: 7,
     id: 6,
+    comments: [
+      {
+        id: 0,
+        content: 'Comment content',
+        author: 'author',
+        claps: 2,
+      },
+      {
+        id: 1,
+        content: 'Comment content',
+        author: 'author',
+        claps: 4,
+      },
+      {
+        id: 2,
+        content: 'Comment content',
+        author: 'author',
+        claps: 12,
+      },
+    ],
   },
 ];

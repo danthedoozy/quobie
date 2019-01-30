@@ -1,12 +1,20 @@
 import React from 'react';
 import Meta from './Meta';
 import Comments from './Comments';
+import AddComment from './AddComment';
 import '../../assets/styles/form.css';
 
-const Discussion = () => (
+const Discussion = ({
+  currentQuote,
+  currentQuote: {
+    comments,
+    id,
+  },
+}) => (
   <div className="discussion">
-    <Meta />
-    <Comments />
+    <Meta currentQuote={currentQuote} />
+    <Comments comments={comments} />
+    <AddComment id={id} />
   </div>
 );
 
