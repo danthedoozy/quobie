@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from './Nav';
 import Discover from './Discover';
-import AddQuote from './features/AddQuote';
+import AddQuote from './AddQuote';
 import Discussion from './Discussion';
 import Footer from './Footer';
 import '../assets/styles/App.css';
