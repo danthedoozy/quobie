@@ -18,7 +18,6 @@ class Discussion extends Component {
     this.setState({ quote });
   }
 
-  // Not working
   getQuote = id => quotes.filter(quote => quote.id === parseInt(id));
 
   render() {
