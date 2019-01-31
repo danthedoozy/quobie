@@ -36,21 +36,21 @@ class App extends Component {
         <Router>
           <Fragment>
             <Nav />
-              <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={() => <Discover quotes={quotes} />}
-                />
-                <Route
-                  path="/add-quote"
-                  render={() => <AddQuote addQuote={addQuote} />}
-                />
-                <Route
-                  path="/discussion/:id"
-                  render={() => <Discussion />}
-                />
-              </Switch>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => <Discover quotes={quotes} />}
+              />
+              <Route
+                path="/add-quote"
+                render={() => <AddQuote addQuote={addQuote} />}
+              />
+              <Route
+                path="/discussion/:id"
+                render={() => <Discussion />}
+              />
+            </Switch>
             <Footer />
           </Fragment>
         </Router>
