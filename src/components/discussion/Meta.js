@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Meta = ({
-  currentQuote: {
+  quote: {
     title,
     author,
     page,

@@ -11,19 +11,19 @@ export default  [
     id: 1,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,
@@ -42,19 +42,19 @@ export default  [
     id: 2,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,
@@ -73,19 +73,19 @@ export default  [
     id: 3,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,
@@ -104,19 +104,19 @@ export default  [
     id: 4,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,
@@ -135,19 +135,19 @@ export default  [
     id: 5,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,
@@ -166,19 +166,19 @@ export default  [
     id: 6,
     comments: [
       {
-        id: 0,
+        commentId: 0,
         content: 'Comment content',
         author: 'author',
         claps: 2,
       },
       {
-        id: 1,
+        commentId: 1,
         content: 'Comment content',
         author: 'author',
         claps: 4,
       },
       {
-        id: 2,
+        commentId: 2,
         content: 'Comment content',
         author: 'author',
         claps: 12,

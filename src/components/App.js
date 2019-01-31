@@ -10,33 +10,25 @@ import mockQuote from '../services/mockQuote';
 import '../assets/styles/App.css';
 
 class App extends Component {
-  // This state is theoretical (we will likely add some state management)
+  // This state is hypothetical (we will likely add some state management)
   state = {
     user: {},
-    currentQuote: mockQuote,
     clapCount: 0, // Figure out a way to allow only a certain number of claps per quote ID
   };
 
   // Add a quote
   addQuote = (newQuote) => {
+    // API call that adds a quote to the database -- console log data for now
     console.log(newQuote);
-  }
-
-  // Pull active quote into state
-  selectQuote = id => {
-    const currentQuote = quotes.filter(quote => quote.id === id);
-    this.setState({ currentQuote });
   }
 
   render() {
     const {
       state: {
         user,
-        currentQuote,
         clapCount,
       },
       addQuote,
-      selectQuote,
     } = this;
 
     return (
@@ -48,15 +40,15 @@ class App extends Component {
                 <Route
                   exact
                   path="/"
-                  render={() => <Discover quotes={quotes} selectQuote={selectQuote}/>}
+                  render={() => <Discover quotes={quotes} />}
                 />
                 <Route
                   path="/add-quote"
                   render={() => <AddQuote addQuote={addQuote} />}
                 />
                 <Route
-                  path="/discussion"
-                  render={() => <Discussion currentQuote={currentQuote} />}
+                  path="/discussion/:id"
+                  render={() => <Discussion />}
                 />
               </Switch>
             <Footer />

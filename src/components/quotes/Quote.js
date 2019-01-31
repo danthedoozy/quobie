@@ -16,7 +16,6 @@ const Quote = ({
     claps,
     id,
   },
-  selectQuote,
   history,
 }) => (
   <div className="quote">
@@ -54,10 +53,7 @@ const Quote = ({
         <button
           className="button btn-primary is-small"
           type="button"
-          onClick={() => {
-            selectQuote(id);
-            history.push('/discussion');
-          }}
+          onClick={() => history.push(`/discussion/${id}`)}
         >
           Join discussion
         </button>
