@@ -9,7 +9,17 @@ const Comments = ({ comments }) => (
   <div>
     <h1>Comments:</h1>
     <hr />
-    {console.log(comments)}
+    <ul>
+      {comments.map(({ commentId, content, author, claps}) => (
+        <li key={commentId}>
+          <p>ID: {commentId}</p>
+          <p>Content: {content}</p>
+          <p>Author: {author}</p>
+          <p>Claps: {claps}</p>
+          <hr />
+        </li>
+      ))}
+    </ul>
   </div>
 );
 

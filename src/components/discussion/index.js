@@ -14,12 +14,12 @@ class Discussion extends Component {
 
   componentDidMount = () => {
     const { id } = this.props.match.params;
-    const quote = this.getQuote(id);
-    console.log(quote);
+    const quote = this.getQuote(id)[0];
+    this.setState({ quote });
   }
 
   // Not working
-  getQuote = id => quotes.filter(quote => quote.id === id);
+  getQuote = id => quotes.filter(quote => quote.id === parseInt(id));
 
   render() {
     const {
@@ -29,6 +29,7 @@ class Discussion extends Component {
     return (
       <div className="discussion">
         <Meta quote={quote} />
+        <Comments comments={quote.comments || []} />
         <AddComment id={quote.id} />
       </div>
     );
