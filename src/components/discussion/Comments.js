@@ -3,24 +3,20 @@ import React from 'react';
 import Comment from './Comment';
 
 // Comments will have 'hover states' that reveal additional functionality
-// Comments will also have a 'See More' clickable for long quotes
+// Comments could also have a 'See More' clickable for long quotes
 
 const Comments = ({ comments }) => (
-  <div>
-    <h1>Comments:</h1>
-    <hr />
-    <ul>
-      {comments.map(({ commentId, content, author, claps}) => (
-        <li key={commentId}>
-          <p>ID: {commentId}</p>
-          <p>Content: {content}</p>
-          <p>Author: {author}</p>
-          <p>Claps: {claps}</p>
-          <hr />
-        </li>
-      ))}
-    </ul>
-  </div>
+  <ul>
+    {comments.map(({ commentId, content, author, claps}) => (
+      <Comment
+        key={commentId}
+        commentId={commentId}
+        content={content}
+        author={author}
+        claps={claps}
+      />
+    ))}
+  </ul>
 );
 
 export default Comments;

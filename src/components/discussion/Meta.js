@@ -13,7 +13,7 @@ const Meta = ({
   }
 }) => (
   <div>
-    <h1>{content}</h1>
+    <h1>&ldquo;{content}&rdquo;</h1>
     <p>Title: {title}</p>
     <p>Author: {author}</p>
     <p>Page: {page}</p>
