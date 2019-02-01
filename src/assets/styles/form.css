@@ -1,1 +1,19 @@
 /* For all forms */
+
+.add-quote-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.form-fields {
+  text-align: right;
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+.form-field input {
+  margin-left: 10px;
+}
