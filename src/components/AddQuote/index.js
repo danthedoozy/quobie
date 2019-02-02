@@ -71,8 +71,8 @@ const formatInput = ({
 }) => ({
   title: capitalize(title).trim(),
   author: capitalize(author).trim(),
-  page,
-  line,
+  page: parseInt(page),
+  line: parseInt(line),
   genre: capitalize(genre),
   type: capitalize(type),
   content: content.trim(),
