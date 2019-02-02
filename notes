@@ -20,6 +20,7 @@ quote {
   user: id,
   claps: number,
   flags: number,
+  hidden: boolean,
   comments: array,
 }
 
@@ -38,7 +39,8 @@ collection {
 comment {
   id: number,
   content: string,
-  author: string,
+  quoteId: number,
+  userId: number,
   claps: number,
   flags: number,
   hidden: boolean,

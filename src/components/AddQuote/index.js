@@ -99,6 +99,7 @@ const AddQuoteContainer = ({ addQuote, history }) => (
       onSubmit={(values, { setSubmitting }) => {
         setSubmitting(false);
         addQuote(formatInput(values));
+        alert('Your quote has been added!');
         history.push('/');
       }}
     >

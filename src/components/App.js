@@ -21,6 +21,8 @@ class App extends Component {
   // Add a quote
   addQuote = newQuote => {
     newQuote.userId = this.state.user.id;
+    newQuote.flags = 0;
+    newQuote.hidden = false;
     // API call that adds a quote to the database -- console log data for now
     console.log(newQuote);
   }
@@ -30,6 +32,8 @@ class App extends Component {
     newComment.userId = this.state.user.id;
     newComment.quoteId = quoteId;
     newComment.claps = 0;
+    newComment.flags = 0;
+    newComment.hidden = false;
     // API call that adds a comment to the database -- console log data for now
     console.log(newComment);
   }
