@@ -6,31 +6,27 @@ import AddQuote from './AddQuote';
 import Discussion from './Discussion';
 import Footer from './Footer';
 import quotes from '../services/mock';
-import mockQuote from '../services/mockQuote';
 import '../assets/styles/App.css';
 
 class App extends Component {
   // This state is hypothetical (we will likely add some state management)
   state = {
-    user: {},
+    user: {
+      id: 25,
+      username: 'Daniel Driskill',
+    },
     clapCount: 0, // Figure out a way to allow only a certain number of claps per quote ID
   };
 
   // Add a quote
   addQuote = (newQuote) => {
+    newQuote.userId = this.state.user.id;
     // API call that adds a quote to the database -- console log data for now
     console.log(newQuote);
   }
 
   render() {
-    const {
-      state: {
-        user,
-        clapCount,
-      },
-      addQuote,
-    } = this;
-
+    const { addQuote } = this;
     return (
       <div className="App">
         <Router>

@@ -1,85 +1,99 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
 import { withRouter } from 'react-router-dom';
+import { capitalize } from 'lodash';
+
+import AddQuote from './AddQuote';
 import '../../assets/styles/form.css';
 
-// USE FORMIK
-// Should this be a modal or a page? IDK! A little UX help, please?
+// ====== TODO: Invalidate strings containing URL paths, display form in modal instead of route ======
 
-class AddQuote extends Component {
-  state = {
-    title: '',
-    author: '',
-    page: null,
-    line: null,
-    genre: '',
-    type: '',
-    content: '',
-  };
+const initialValues = {
+  title: '',
+  author: '',
+  page: '',
+  line: '',
+  genre: '',
+  type: '',
+  content: '',
+};
 
-  handleChange = ({
-    target: {
-      name,
-      value,
-    },
-  }) => {
-    this.setState({ [name]: value });
-  }
+// 'Yup' is a simple object validation library that works great with Formik forms!
+const addQuoteSchema = Yup.object().shape({
+  title: Yup
+    .string()
+    .max(70, 'Too Long!')
+    .typeError('Only normal characters allowed')
+    .required('Required'),
+  author: Yup
+    .string()
+    .max(70, 'Too Long!')
+    .typeError('Only normal characters allowed')
+    .required('Required'),
+  page: Yup
+    .number()
+    .positive('Must be a positive number')
+    .integer('Must be a whole number')
+    .typeError('Must be a number'),
+  line: Yup
+    .number()
+    .max(70, 'Too Long!')
+    .positive('Must be a positive number')
+    .integer('Must be a whole number')
+    .typeError('Must be a number'),
+  genre: Yup
+    .string()
+    .typeError('Only normal characters allowed')
+    .required('Required'),
+  type: Yup
+    .string()
+    .typeError('Only normal characters allowed')
+    .required('Required'),
+  content: Yup
+    .string()
+    .min(2, 'Too Short!')
+    .max(200, 'Too Long!')
+    .typeError('Only normal characters allowed')
+    .required('Required'),
+});
 
-  handleSubmit = e => {
-    const {
-      state,
-      props: {
-        addQuote,
-        history,
-      },
-    } = this;
-    e.preventDefault();
-    addQuote(state);
-    history.push('/');
-  }
+// Check string inputs for URLs (not yet in use for validation but works)
+const checkForUrls = str => new RegExp(/(?:https?|ftp):\/\/[\n\S]+/g).test(str);
 
-  render() {
-    const {
-      handleChange,
-      handleSubmit,
-    } = this;
+// Format values
+const formatInput = ({
+  title,
+  author,
+  page,
+  line,
+  genre,
+  type,
+  content,
+}) => ({
+  title: capitalize(title),
+  author: capitalize(author),
+  page,
+  line,
+  genre: capitalize(genre),
+  type: capitalize(type),
+  content,
+});
 
-    return (
-      <div className="add-quote-form">
-        <form>
-          <div className="form-fields">
-            <div className="form-field">
-              Title:
-              <input type="text" name="title" defaultValue="" onChange={handleChange} />
-            </div>
-            <div className="form-field">
-              Author:
-              <input type="text" name="author" defaultValue="" onChange={handleChange} />
-            </div>
-            <div className="form-field">
-              Location:
-              <input type="text" name="page" defaultValue="" onChange={handleChange} placeholder="Page" />
-              <br />
-              <input type="text" name="line" defaultValue="" onChange={handleChange} placeholder="Line" />
-            </div>
-            <div className="form-field">
-              Genre:
-              <input type="text" name="genre" defaultValue="" onChange={handleChange} />
-            </div>
-            <div className="form-field">
-              Type:
-              <input type="text" name="type" defaultValue="" onChange={handleChange} />
-            </div>
-            <div className="form-field">
-              Content:
-              <input type="text" name="content" defaultValue="" onChange={handleChange} />
-            </div>
-          </div>
-          <input type="submit" className="button btn-primary button-balanced-padding" value="Submit" onClick={handleSubmit} />
-        </form>
-      </div>
-    );
-  }
-}
+const AddQuoteContainer = ({ addQuote, history }) => (
+  <div className="add-quote-form">
+    <Formik
+      initialValues={initialValues}
+      validationSchema={addQuoteSchema}
+      onSubmit={(values, { setSubmitting }) => {
+        setSubmitting(false);
+        addQuote(formatInput(values));
+        history.push('/');
+      }}
+    >
+      {({ isSubmitting }) => <AddQuote isSubmitting={isSubmitting} />}
+    </Formik>
+  </div>
+);
 
-export default withRouter(AddQuote);
+export default withRouter(AddQuoteContainer);

@@ -46,10 +46,8 @@ comment {
 
 
 Special Functions
-1. Camel-casing titles
-2. Duplicate checkers
-3. Detecting and deleting external links
-5. Sort by (popularity, word match, etc.)
+1. Duplicate checkers
+2. Sort by (popularity, word match, etc.)
 
 
 MVP
