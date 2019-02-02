@@ -6,23 +6,23 @@ Share, discover, and discuss quotes from great literature.
 ## Technologies Used
 
 ### React
-*The Best JavaScript Frontend Framework/Library*
+*The Best JavaScript Frontend Framework/Library*<br>
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### react-router-dom
-*Very snappy and quick browser routing*
+*Very snappy and quick browser routing*<br>
 To learn more about react-router-dom, visit the [react-router-dom documentation](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ### Formik
-*Forms*
+*Forms*<br>
 To learn more about Formik, visit the [Formik documentation](https://jaredpalmer.com/formik/)
 
 ### Yup
-*Object validation library*
+*Object validation library*<br>
 To learn more about Yup, visit the [Yup documentation](https://github.com/jquense/yup)
 
 ### Lodash
-*JavaScript utility library*
+*JavaScript utility library*<br>
 To learn more about Lodash, visit the [Lodash documentation](https://lodash.com/)
 
 ## Available Scripts
