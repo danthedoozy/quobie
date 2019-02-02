@@ -8,7 +8,7 @@ import AddQuote from './AddQuote';
 import { checkForUrls } from '../../utils/strings';
 import '../../assets/styles/form.css';
 
-// ====== TODO: Invalidate strings containing URL paths, display form in modal instead of route ======
+// ====== TODO: Display form in modal instead of route, add type and genre options list for mapping to DOM ======
 
 const initialValues = {
   title: '',
