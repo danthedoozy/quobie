@@ -19,14 +19,23 @@ class App extends Component {
   };
 
   // Add a quote
-  addQuote = (newQuote) => {
+  addQuote = newQuote => {
     newQuote.userId = this.state.user.id;
     // API call that adds a quote to the database -- console log data for now
     console.log(newQuote);
   }
 
+  // Add a comment
+  addComment = (newComment, quoteId) => {
+    newComment.userId = this.state.user.id;
+    newComment.quoteId = quoteId;
+    newComment.claps = 0;
+    // API call that adds a comment to the database -- console log data for now
+    console.log(newComment);
+  }
+
   render() {
-    const { addQuote } = this;
+    const { addQuote, addComment } = this;
     return (
       <div className="App">
         <Router>
@@ -44,7 +53,7 @@ class App extends Component {
               />
               <Route
                 path="/discussion/:id"
-                render={() => <Discussion />}
+                render={() => <Discussion addComment={addComment} />}
               />
             </Switch>
             <Footer />

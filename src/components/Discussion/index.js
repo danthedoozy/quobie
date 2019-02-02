@@ -21,14 +21,17 @@ class Discussion extends Component {
   getQuote = id => quotes.filter(quote => quote.id === parseInt(id));
 
   render() {
-    const { quote } = this.state;
+    const {
+      state: { quote },
+      props: { addComment },
+    } = this;
 
     return (
       <div className="discussion">
         <Meta quote={quote} />
         <hr />
-        <h2>Comments:</h2>
-        <AddComment id={quote.id} />
+        <h2>Comments</h2>
+        <AddComment quoteId={quote.id} addComment={addComment} />
         <Comments comments={quote.comments || []} />
       </div>
     );

@@ -3,7 +3,7 @@ import { Form, Field, ErrorMessage } from 'formik';
 
 import '../../assets/styles/form.css';
 
-// ====== TODO: Lengthen 'content' box and style inputs in CSS ======
+// ====== TODO: Lengthen 'content' box and decorate inputs in CSS ======
 
 const AddQuote = ({ isSubmitting }) => (
   <div>
