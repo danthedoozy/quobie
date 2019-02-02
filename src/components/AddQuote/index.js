@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { capitalize } from 'lodash';
 
 import AddQuote from './AddQuote';
+import { checkForUrls } from '../../utils/strings';
 import '../../assets/styles/form.css';
 
 // ====== TODO: Invalidate strings containing URL paths, display form in modal instead of route ======
@@ -58,9 +59,6 @@ const addQuoteSchema = Yup.object().shape({
     .required('Required'),
 });
 
-// Check string inputs for URLs (not yet in use for validation but works)
-const checkForUrls = str => new RegExp(/(?:https?|ftp):\/\/[\n\S]+/g).test(str);
-
 // Format values
 const formatInput = ({
   title,
@@ -71,13 +69,13 @@ const formatInput = ({
   type,
   content,
 }) => ({
-  title: capitalize(title),
-  author: capitalize(author),
+  title: capitalize(title).trim(),
+  author: capitalize(author).trim(),
   page,
   line,
   genre: capitalize(genre),
   type: capitalize(type),
-  content,
+  content: content.trim(),
 });
 
 const AddQuoteContainer = ({ addQuote, history }) => (
@@ -85,6 +83,19 @@ const AddQuoteContainer = ({ addQuote, history }) => (
     <Formik
       initialValues={initialValues}
       validationSchema={addQuoteSchema}
+      validate={values => {
+        let errors = {};
+        if (checkForUrls(values.title)) {
+          errors.title = 'No URLs';
+        }
+        if (checkForUrls(values.author)) {
+          errors.author = 'No URLs';
+        }
+        if (checkForUrls(values.content)) {
+          errors.content = 'No URLs';
+        }
+        return errors;
+      }}
       onSubmit={(values, { setSubmitting }) => {
         setSubmitting(false);
         addQuote(formatInput(values));
