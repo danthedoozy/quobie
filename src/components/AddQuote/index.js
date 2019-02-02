@@ -39,7 +39,7 @@ const addQuoteSchema = Yup.object().shape({
     .typeError('Must be a number'),
   line: Yup
     .number()
-    .max(70, 'Too Long!')
+    .max(100, 'Too Long!')
     .positive('Must be a positive number')
     .integer('Must be a whole number')
     .typeError('Must be a number'),
