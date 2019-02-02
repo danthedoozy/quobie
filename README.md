@@ -3,7 +3,7 @@
 ## Description
 Share, discover, and discuss quotes from great literature.
 
-##Technologies Used
+## Technologies Used
 
 ### React
 *The Best JavaScript Frontend Framework/Library*
