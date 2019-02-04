@@ -24,12 +24,13 @@ const initialValues = {
 const addQuoteSchema = Yup.object().shape({
   title: Yup
     .string()
-    .max(70, 'Too Long!')
+    .max(70, 'Too long!')
     .typeError('Only normal characters allowed')
     .required('Required'),
   author: Yup
     .string()
-    .max(70, 'Too Long!')
+    .min(2, 'Too short!')
+    .max(70, 'Too long!')
     .typeError('Only normal characters allowed')
     .required('Required'),
   page: Yup
@@ -39,7 +40,7 @@ const addQuoteSchema = Yup.object().shape({
     .typeError('Must be a number'),
   line: Yup
     .number()
-    .max(100, 'Too Long!')
+    .max(100, 'Too long!')
     .positive('Must be a positive number')
     .integer('Must be a whole number')
     .typeError('Must be a number'),
@@ -53,8 +54,8 @@ const addQuoteSchema = Yup.object().shape({
     .required('Required'),
   content: Yup
     .string()
-    .min(2, 'Too Short!')
-    .max(200, 'Too Long!')
+    .min(2, 'Too short!')
+    .max(200, 'Too long!')
     .typeError('Only normal characters allowed')
     .required('Required'),
 });

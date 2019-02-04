@@ -13,8 +13,8 @@ const initialValues = {
 const addCommentSchema = Yup.object().shape({
   content: Yup
     .string()
-    .min(2, 'Too Short!')
-    .max(200, 'Too Long!')
+    .min(2, 'Too short!')
+    .max(1000, 'Too long!')
     .typeError('Only normal characters allowed'),
 });
 
