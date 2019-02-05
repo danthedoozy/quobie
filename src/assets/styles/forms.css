@@ -73,14 +73,4 @@ textarea {
   margin-left: 20px;
 }
 
-/* Add Comment form */
-.add-comment-textarea {
-  width: 240px;
-}
-@media (min-width: 360px) {
-  .add-comment-textarea {
-    width: 300px;
-    padding: 10px;
-  }
-}
 /* Sign Up / Sign In form */

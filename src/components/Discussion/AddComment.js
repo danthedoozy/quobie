@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -45,7 +45,7 @@ const AddComment = ({ quoteId, addComment }) => (
       }}
     >
       {({ isSubmitting }) => (
-        <Fragment>
+        <div className="mb3" style={{textAlign:'left'}}>
           <h3>Leave a comment</h3>
           <Form>
             <div className="pb1">
@@ -61,9 +61,8 @@ const AddComment = ({ quoteId, addComment }) => (
             <button type="submit" disabled={isSubmitting} className="button btn-primary pb1">
               Submit
             </button>
-            <hr />
           </Form>
-        </Fragment>
+        </div>
       )}
     </Formik>
   </div>

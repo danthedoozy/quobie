@@ -1,0 +1,56 @@
+.discussion {
+  display: flex;
+  justify-content: center;
+}
+
+.discussion-inner {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.discussion-meta {
+  padding: 1% 15%;
+  background-color: #ffffff;
+}
+
+.discussion-meta h3 {
+  font-weight: 300;
+}
+
+.add-comment-textarea {
+  width: 240px;
+}
+
+.discussion-comments ul {
+  padding: 0;
+}
+
+.comment {
+  list-style: none;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 360px) {
+  .add-comment-textarea {
+    width: 97%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .discussion-inner {
+    width: 70%;
+  }
+}
+
+@media (min-width: 991px) {
+  .discussion-inner {
+    width: 50%;
+  }
+  .discussion-meta {
+    padding: 3% 25%;
+  }
+}

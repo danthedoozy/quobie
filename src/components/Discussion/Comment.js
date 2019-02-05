@@ -4,12 +4,11 @@ import React from 'react';
 // Comments will also have a 'See More' clickable for long quotes
 
 const Comment = ({ commentId, content, userId, claps }) => (
-  <li>
+  <li className="comment">
     <p>ID: {commentId}</p>
     <p>Content: {content}</p>
     <p>User: {userId}</p>
     <p>Claps: {claps}</p>
-    <hr />
   </li>
 );
 

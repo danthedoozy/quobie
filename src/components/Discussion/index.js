@@ -5,6 +5,7 @@ import Meta from './Meta';
 import Comments from './Comments';
 import AddComment from './AddComment';
 import quotes from '../../services/mock';
+import '../../assets/styles/components/Discussion.css';
 import '../../assets/styles/forms.css';
 
 class Discussion extends Component {
@@ -28,10 +29,13 @@ class Discussion extends Component {
 
     return (
       <div className="discussion">
-        <Meta quote={quote} />
-        <hr />
-        <AddComment quoteId={quote.id} addComment={addComment} />
-        <Comments comments={quote.comments || []} />
+        <div className="discussion-inner">
+          <Meta quote={quote} />
+          <div className="discussion-comments">
+            <AddComment quoteId={quote.id} addComment={addComment} />
+            <Comments comments={quote.comments || []} />
+          </div>
+        </div>
       </div>
     );
   }
