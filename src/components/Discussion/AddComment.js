@@ -49,11 +49,12 @@ const AddComment = ({ quoteId, addComment }) => (
         <Fragment>
           <h3>Leave a comment</h3>
           <Form>
-            <div className="comment-input pb1">
+            <div className="pb1">
               <Field
                 type="text"
                 name="content"
                 component="textarea"
+                className="add-comment-textarea"
                 placeholder="What are your thoughts on this quote?"
               />
             </div>

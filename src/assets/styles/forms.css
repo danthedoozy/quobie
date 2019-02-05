@@ -21,7 +21,6 @@ select {
 }
 
 textarea {
-  width: 185px;
   height: 75px;
   font-size: 16px;
   font-family: 'Aleo', serif;
@@ -60,15 +59,12 @@ textarea {
 }
 
 .form-field textarea {
+  width: 185px;
   margin-left: 20px;
 }
 
 /* Add Comment form */
-.comment-input {
-  justify-content: center;
+.add-comment-textarea {
+  width: 240px;
 }
-.comment-input-inner {
-  margin-right: 10px;
-}
-
 /* Sign Up / Sign In form */
