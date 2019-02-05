@@ -1,7 +1,7 @@
 # Quobie
 
 ## Description
-Share, discover, and discuss quotes from great literature.
+Discuss, share, and discover quotes from great literature.
 
 ## Technologies Used
 
