@@ -1,15 +1,18 @@
 import React from 'react';
+import Clap from '../mechanics/Clap';
+import Report from '../mechanics/Report';
 
 const Meta = ({
   quote: {
+    content,
     title,
     author,
     page,
     line,
     genre,
     type,
-    content,
     claps,
+    id,
   }
 }) => (
   <div className="discussion-meta mb2">
@@ -39,14 +42,10 @@ const Meta = ({
     </div>
     <div className="columns">
       <div className="column">
-        <p className="small">
-          <span role="img" aria-label="clap-emoji" className="clap-emoji">
-            👏
-          </span> {claps}
-        </p>
+        <Clap claps={claps} />
       </div>
       <div className="column">
-        <p className="small">Report</p>
+        <Report id={id} />
       </div>
     </div>
   </div>

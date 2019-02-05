@@ -1,6 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+import Clap from '../mechanics/Clap';
+import Report from '../mechanics/Report';
+
 // Format long quotes
 const formattedQuote = content => {
   const lengthLimit = 110;
@@ -46,14 +49,10 @@ const Quote = ({
     </div>
     <div className="columns">
       <div className="column">
-        <p className="small">
-          <span role="img" aria-label="clap-emoji" className="clap-emoji">
-            👏
-          </span> {claps}
-        </p>
+        <Clap claps={claps} />
       </div>
       <div className="column">
-        <p className="small">Report</p>
+        <Report id={id} />
       </div>
     </div>
     <div className="columns">

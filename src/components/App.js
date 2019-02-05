@@ -39,13 +39,13 @@ class App extends Component {
   }
 
   // Clap for quote
-  quoteClap = (quoteId, userId) => {
+  clapQuote = (quoteId, userId) => {
     // API call that adds a clap to a quote
     console.log(`${userId} has clapped for quote ${quoteId}`);
   };
 
   // Clap for comment
-  commentClap = (commentId, userId) => {
+  clapComment = (commentId, userId) => {
     // API call that adds a clap to a comment
     console.log(`${userId} has clapped for comment ${commentId}`);
   }

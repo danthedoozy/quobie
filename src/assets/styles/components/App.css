@@ -71,3 +71,8 @@
 .mb3 {
   margin-bottom: 30px;
 }
+
+.report-button:hover {
+  color: #ff3860;
+  cursor: pointer;
+}
