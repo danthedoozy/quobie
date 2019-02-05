@@ -7,17 +7,19 @@ Discuss your favorite book quotes (Genius for books).
 4. Each quote has its own page, complete with discussions, claps, and sharing on social media
 5. Add quotes to your personal collection/board
 
-== TO DO ==
+=== TO DO ===
 * Style all inputs (content boxes and others)
 * Make quote cards truly mobile responsive
 * Style discussion page (meta and comments)
 * Turn '/add-quote' into a modal, rather than a route
 * Clap functionality
 * Report functionality
-* NAIL schema
-* Terms of Service
 * Allow the selection of multiple genres and types
+* NAIL the backend schema
 * Frontend logic for editing and deleting comment if userId is the same
+* Frontend logic for editing a quote if userId is the same
+* Load more (quotes, comments) functionality
+* Terms of Service
 
 
 quote {
@@ -26,14 +28,14 @@ quote {
   page: number,
   line: number,
   author: !string,
-  genre: string, (romance, scifi, prose, non-fiction, poetry, etc.)
-  type: string, (inspiration, motivation, prose, poetry, etc.)
+  genres: array(string),
+  type: array(string),
   content: !string,
-  user: id,
+  userId: id,
   claps: number,
   flags: number,
   hidden: boolean,
-  comments: array,
+  comments: array(obj),
 }
 
 user {

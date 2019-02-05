@@ -6,7 +6,7 @@ import { capitalize, replace } from 'lodash';
 
 import AddQuote from './AddQuote';
 import { checkForUrls } from '../../utils/strings';
-import '../../assets/styles/form.css';
+import '../../assets/styles/forms.css';
 
 const initialValues = {
   title: '',
@@ -57,7 +57,7 @@ const addQuoteSchema = Yup.object().shape({
     .required('Required'),
 });
 
-// Format values
+// Format input
 const formatInput = ({
   title,
   author,
@@ -68,7 +68,7 @@ const formatInput = ({
   content,
 }) => ({
   title: replace(capitalize(title).trim(), /"/g, "'"),
-  author: replace(capitalize(author).trim(), /"/g, ""),
+  author: replace(capitalize(author).trim(), /"/g, "'"),
   page: parseInt(page),
   line: parseInt(line),
   genre: capitalize(genre),

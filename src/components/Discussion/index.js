@@ -5,7 +5,7 @@ import Meta from './Meta';
 import Comments from './Comments';
 import AddComment from './AddComment';
 import quotes from '../../services/mock';
-import '../../assets/styles/form.css';
+import '../../assets/styles/forms.css';
 
 class Discussion extends Component {
   state = {

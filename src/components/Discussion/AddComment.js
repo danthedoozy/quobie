@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 import { checkForUrls } from '../../utils/strings';
-import '../../assets/styles/form.css';
+import '../../assets/styles/forms.css';
 
 const initialValues = {
   content: '',
@@ -51,6 +51,7 @@ const AddComment = ({ quoteId, addComment }) => (
             <Field
               type="text"
               name="content"
+              className="comment-input"
               placeholder="What are your thoughts on this quote?"
             />
             <ErrorMessage name="content" component="div" className="error-message" />

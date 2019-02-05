@@ -1,0 +1,58 @@
+/* For all forms */
+
+input {
+  width: 200px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 200px;
+}
+
+textarea {
+  width: 195px;
+}
+
+.content-input {
+
+}
+
+/* Add Quote form */
+.add-quote-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.form-fields {
+  text-align: right;
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+.form-field-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.form-field input {
+  margin-left: 10px;
+}
+
+.form-field select {
+  margin-left: 10px;
+}
+
+.form-field textarea {
+  margin-left: 10px;
+}
+
+/* Add Comment form */
+.comment-input {
+  margin-right: 10px;
+}
+
+/* Sign Up / Sign In form */
