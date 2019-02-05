@@ -27,6 +27,26 @@ class App extends Component {
     console.log(newQuote);
   }
 
+  // Clap for quote
+  clapQuote = quoteId => {
+    // API call that adds a clap to a quote
+    console.log(`${this.state.user.id} has clapped for quote ${quoteId}`);
+  };
+
+  // Report quote
+  reportQuote = quoteId => {
+    // API call that adds a flag to a quote
+    console.log(`${this.state.user.id} has reported quote ${quoteId}`);
+  };
+
+  // Edit quote
+  editQuote = quoteId => {
+    // API call that edits quote if userId matches
+    if (this.state.user.id === quoteId) {
+      console.log(`${quoteId} has been edited`);
+    }
+  }
+
   // Add a comment
   addComment = (newComment, quoteId) => {
     newComment.userId = this.state.user.id;
@@ -38,29 +58,33 @@ class App extends Component {
     console.log(newComment);
   }
 
-  // Clap for quote
-  clapQuote = (quoteId, userId) => {
-    // API call that adds a clap to a quote
-    console.log(`${userId} has clapped for quote ${quoteId}`);
-  };
-
   // Clap for comment
-  clapComment = (commentId, userId) => {
+  clapComment = commentId => {
     // API call that adds a clap to a comment
-    console.log(`${userId} has clapped for comment ${commentId}`);
+    console.log(`${this.state.user.id} has clapped for comment ${commentId}`);
   }
 
-  // Report quote
-  reportQuote = (quoteId, userId) => {
-    // API call that adds a flag to a quote
-    console.log(`${userId} has reported quote ${quoteId}`);
+  // Report comment
+  reportComment = commentId => {
+    // API call that adds a flag to a comment
+    console.log(`${this.state.user.id} has reported comment ${commentId}`);
   };
 
-  // Report comment
-  reportComment = (commentId, userId) => {
-    // API call that adds a flag to a comment
-    console.log(`${userId} has reported comment ${commentId}`);
-  };
+  // Edit comment
+  editComment = commentId => {
+    // API call that edits comment if userId matches
+    if (this.state.user.id === commentId) {
+      console.log(`${commentId} has been edited`);
+    }
+  }
+
+  // Delete comment
+  deleteComment = commentId => {
+    // API call that deletes comment if userId matches
+    if (this.state.user.id === commentId) {
+      console.log(`${commentId} has been deleted`);
+    }
+  }
 
   render() {
     const { addQuote, addComment } = this;

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Clap from '../mechanics/Clap';
+import Report from '../mechanics/Report';
+
 // Comments will have 'hover states' that reveal additional functionality
 // Comments will also have a 'See More' clickable for long quotes
 
@@ -9,11 +12,8 @@ const Comment = ({ commentId, content, userId, claps, date }) => (
     <p>Content: {content}</p>
     <p>User: {userId}</p>
     <p>Date: {date}</p>
-    <p>
-      <span role="img" aria-label="clap-emoji" className="clap-emoji">
-        👏
-      </span> {claps}
-    </p>
+    <Clap claps={claps} />
+    <Report id={commentId} />
   </li>
 );
 
