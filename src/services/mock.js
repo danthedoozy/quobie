@@ -69,8 +69,8 @@ export default  [
   },
   {
     title: "How to Train Your Dragon",
-    page: '868',
-    line: '2',
+    page: '',
+    line: '',
     author: 'James C. Driskill',
     genre: 'Fantasy',
     type: 'Prose',
@@ -138,7 +138,7 @@ export default  [
   {
     title: "Righteous Living",
     page: '498',
-    line: '51',
+    line: '',
     author: 'Daniel K. Driskill',
     genre: 'Non-fiction',
     type: 'Inspirational',

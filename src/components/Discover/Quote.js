@@ -25,7 +25,10 @@ const Quote = ({
       <div className="column">
         <p>{title}</p>
         <p className="small">by {author}</p>
-        <p className="small">page {page}, line {line}</p>
+        {page ?
+          <p className="small">page {page}{line ? `, line ${line}` : ''}</p>
+          : null
+        }
       </div>
       <div className="column text-align-right">
         <p>
