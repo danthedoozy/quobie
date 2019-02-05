@@ -17,7 +17,7 @@ Discuss your favorite book quotes (Genius for books).
 * NAIL the backend schema
 * Frontend logic for editing and deleting comment if userId is the same
 * Frontend logic for editing a quote if userId is the same
-* Load more (quotes, comments) functionality
+* Load more (quotes, comments) on scroll
 * Terms of Service
 
 
