@@ -9,7 +9,6 @@ Discuss your favorite book quotes (Genius for books).
 
 === TO DO ===
 * Style discussion page (meta and comments)
-* Turn '/add-quote' into a modal, rather than a route
 * Clap functionality
 * Report functionality
 * Allow the selection of multiple genres and types
@@ -17,6 +16,7 @@ Discuss your favorite book quotes (Genius for books).
 * Frontend logic for editing and deleting comment if userId is the same
 * Frontend logic for editing a quote if userId is the same
 * Load more (quotes, comments) on scroll
+* Turn '/add-quote' into a modal, rather than a route
 * Terms of Service
 
 

@@ -2,10 +2,10 @@ import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { withRouter } from 'react-router-dom';
-import { capitalize, replace } from 'lodash';
+import { replace } from 'lodash';
 
 import AddQuote from './AddQuote';
-import { checkForUrls } from '../../utils/strings';
+import { checkForUrls, upperFirst } from '../../utils/strings';
 import '../../assets/styles/forms.css';
 
 const initialValues = {
@@ -68,12 +68,12 @@ const formatInput = ({
   type,
 }) => ({
   content: replace(content.trim(), /"/g, "'"),
-  title: replace(capitalize(title).trim(), /"/g, "'"),
-  author: replace(capitalize(author).trim(), /"/g, "'"),
-  page: parseInt(page),
-  line: parseInt(line),
-  genre: capitalize(genre),
-  type: capitalize(type),
+  title: replace(upperFirst(title).trim(), /"/g, "'"),
+  author: replace(upperFirst(author).trim(), /"/g, "'"),
+  page: page ? parseInt(page) : '',
+  line: line ? parseInt(line) : '',
+  genre: upperFirst(genre),
+  type: upperFirst(type),
 });
 
 const AddQuoteContainer = ({ addQuote, history }) => (
