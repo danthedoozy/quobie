@@ -16,6 +16,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -23,6 +24,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -30,6 +32,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },
@@ -50,6 +53,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -57,6 +61,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -64,6 +69,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },
@@ -84,6 +90,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -91,6 +98,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -98,6 +106,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },
@@ -118,6 +127,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -125,6 +135,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -132,6 +143,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },
@@ -152,6 +164,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -159,6 +172,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -166,6 +180,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },
@@ -186,6 +201,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
+        date: 0,
       },
       {
         commentId: 1,
@@ -193,6 +209,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 4,
+        date: 1,
       },
       {
         commentId: 2,
@@ -200,6 +217,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
+        date: 2,
       },
     ],
   },

@@ -7,13 +7,14 @@ import Comment from './Comment';
 
 const Comments = ({ comments }) => (
   <ul>
-    {comments.map(({ commentId, content, userId, claps}) => (
+    {comments.map(({ commentId, content, userId, claps, date }) => (
       <Comment
         key={commentId}
         commentId={commentId}
         content={content}
         userId={userId}
         claps={claps}
+        date={date}
       />
     ))}
   </ul>

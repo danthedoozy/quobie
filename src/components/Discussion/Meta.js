@@ -15,7 +15,7 @@ const Meta = ({
   <div className="discussion-meta mb2">
     <h1>&ldquo;{content}&rdquo;</h1>
     <hr />
-    <div className="columns is-spaced-around pb3">
+    <div className="columns is-spaced-around pb3 text-align-left">
       <div className="column">
         <h3>{title}</h3>
         <p>

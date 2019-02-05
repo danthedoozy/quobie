@@ -45,7 +45,7 @@ const AddComment = ({ quoteId, addComment }) => (
       }}
     >
       {({ isSubmitting }) => (
-        <div className="mb3" style={{textAlign:'left'}}>
+        <div className="mb3 text-align-left">
           <h3>Leave a comment</h3>
           <Form>
             <div className="pb1">

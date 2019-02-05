@@ -4,6 +4,7 @@
 }
 
 .discussion-inner {
+  display: block;
   margin-top: 30px;
   width: 90%;
 }
@@ -11,6 +12,7 @@
 .discussion-meta {
   padding: 1% 15%;
   background-color: #ffffff;
+  box-shadow: 0px 0px 1px #eeeeee;
 }
 
 .discussion-meta h3 {
@@ -29,6 +31,7 @@
   list-style: none;
   text-align: left;
   background-color: #ffffff;
+  box-shadow: 0px 0px 1px #eeeeee;
   padding: 30px;
   margin-bottom: 20px;
 }
@@ -48,9 +51,12 @@
 
 @media (min-width: 991px) {
   .discussion-inner {
-    width: 50%;
+    width: 725px;
   }
   .discussion-meta {
-    padding: 3% 25%;
+    padding: 3% 10%;
+  }
+  .add-comment-textarea {
+    width: 705px;
   }
 }
