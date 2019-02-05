@@ -8,7 +8,6 @@ Discuss your favorite book quotes (Genius for books).
 5. Add quotes to your personal collection/board
 
 === TO DO ===
-* 'See More' link for long quotes that takes you to discussion
 * Clap functionality
 * Report functionality
 * Build logic in 'AddComment' that attaches the current date (use Moment.js)

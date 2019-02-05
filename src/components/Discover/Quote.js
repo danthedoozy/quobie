@@ -1,25 +1,30 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-// Quote cards could have 'hover states' that reveal additional functions
-// Cards will also have a 'See More' clickable for long quotes
+// Format long quotes
+const formattedQuote = content => {
+  const lengthLimit = 110;
+  return content.length > lengthLimit ?
+    <h3>&ldquo;{content.slice(0, lengthLimit)}...&rdquo;</h3>
+    : <h3>&ldquo;{content}&rdquo;</h3>;
+};
 
 const Quote = ({
   quote: {
+    content,
     title,
     page,
     line,
     author,
     genre,
     type,
-    content,
     claps,
     id,
   },
   history,
 }) => (
   <div className="quote">
-    <h3>&ldquo;{content}&rdquo;</h3>
+    {formattedQuote(content)}
     <hr />
     <div className="columns is-spaced-between pb2">
       <div className="column">

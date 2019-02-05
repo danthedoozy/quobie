@@ -117,7 +117,7 @@ export default  [
     author: 'Joni E. Driskill',
     genre: 'Sci-fi',
     type: 'Motivational',
-    content: 'The grass is greener on the other side, unless, in actuality and reality, it is not.',
+    content: 'The grass is greener on the other side, unless, in actuality and reality, it is not. I guess in that case, you can just give up on anything nice in life.',
     claps: 23,
     id: 4,
     comments: [
