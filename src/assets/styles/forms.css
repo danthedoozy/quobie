@@ -1,20 +1,33 @@
 /* For all forms */
 
 input {
-  width: 200px;
+  width: 190px;
+  height: 35px;
+  font-size: 16px;
+  font-family: 'Aleo', serif;
   box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 select {
-  width: 200px;
+  width: 190px;
+  height: 35px;
+  font-size: 16px;
+  font-family: 'Aleo', serif;
+  border: none;
+  outline: none;
+  background: #ffffff;
 }
 
 textarea {
-  width: 195px;
-}
-
-.content-input {
-
+  width: 185px;
+  height: 75px;
+  font-size: 16px;
+  font-family: 'Aleo', serif;
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 /* Add Quote form */
@@ -34,24 +47,27 @@ textarea {
 }
 .form-field-inner {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
 }
 
 .form-field input {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .form-field select {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .form-field textarea {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /* Add Comment form */
 .comment-input {
+  justify-content: center;
+}
+.comment-input-inner {
   margin-right: 10px;
 }
 

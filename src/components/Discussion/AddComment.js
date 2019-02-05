@@ -16,7 +16,7 @@ const addCommentSchema = Yup.object().shape({
     .min(5, 'Too short!')
     .max(1000, 'Too long!')
     .typeError('Only normal characters allowed')
-    .required('Required'),
+    .required('You need to type something!'),
 });
 
 // Format values
@@ -38,24 +38,27 @@ const AddComment = ({ quoteId, addComment }) => (
         }
         return errors;
       }}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values, { setSubmitting, resetForm }) => {
         setSubmitting(false);
         addComment(formatInput(values), quoteId);
         alert('Your comment has been added!'); // Change this to a modal alert at some point...
+        resetForm();
       }}
     >
       {({ isSubmitting }) => (
         <Fragment>
           <h3>Leave a comment</h3>
           <Form>
-            <Field
-              type="text"
-              name="content"
-              className="comment-input"
-              placeholder="What are your thoughts on this quote?"
-            />
-            <ErrorMessage name="content" component="div" className="error-message" />
-            <button type="submit" disabled={isSubmitting} className="button btn-primary">
+            <div className="comment-input pb1">
+              <Field
+                type="text"
+                name="content"
+                component="textarea"
+                placeholder="What are your thoughts on this quote?"
+              />
+            </div>
+            <ErrorMessage name="content" component="div" className="error-message pb1" />
+            <button type="submit" disabled={isSubmitting} className="button btn-primary pb1">
               Submit
             </button>
             <hr />

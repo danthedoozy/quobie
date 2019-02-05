@@ -12,35 +12,35 @@ const AddQuote = ({ isSubmitting }) => (
       <div className="form-fields">
         <div className="form-field">
           <div className="form-field-inner">
-            Title:
+            Title
             <Field type="text" name="title" />
           </div>
           <ErrorMessage name="title" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Author:
+            Author
             <Field type="text" name="author" />
           </div>
           <ErrorMessage name="author" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Page:
+            Page
             <Field type="text" name="page" />
           </div>
           <ErrorMessage name="page" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Line:
+            Line
             <Field type="text" name="line" />
           </div>
           <ErrorMessage name="line" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Genre:
+            Genre
             <Field component="select" name="genre">
               <option disabled value="">——</option>
               {genres.map(genre => <option value={genre} key={genre}>{capitalize(genre)}</option>)}
@@ -50,7 +50,7 @@ const AddQuote = ({ isSubmitting }) => (
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Type:
+            Type
             <Field component="select" name="type">
               <option disabled value="">——</option>
               {types.map(type => <option value={type} key={type}>{capitalize(type)}</option>)}
@@ -60,7 +60,7 @@ const AddQuote = ({ isSubmitting }) => (
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Content:
+            Content
             <Field type="text" name="content" component="textarea" className="content-input" />
           </div>
           <ErrorMessage name="content" component="div" className="error-message" />
