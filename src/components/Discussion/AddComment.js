@@ -55,7 +55,7 @@ const AddComment = ({ quoteId, addComment }) => (
                 name="content"
                 component="textarea"
                 className="add-comment-textarea"
-                placeholder="Share your thoughts here..."
+                placeholder="Share your thoughts and impressions..."
               />
             </div>
             <ErrorMessage name="content" component="div" className="error-message pb1" />
