@@ -12,35 +12,54 @@ const AddQuote = ({ isSubmitting }) => (
       <div className="form-fields">
         <div className="form-field">
           <div className="form-field-inner">
-            Title
+            <span className="form-field-label">
+              Content
+            </span>
+            <Field type="text" name="content" component="textarea" className="content-input" />
+          </div>
+          <ErrorMessage name="content" component="div" className="error-message" />
+        </div>
+        <div className="form-field">
+          <div className="form-field-inner">
+            <span className="form-field-label">
+              Title
+            </span>
             <Field type="text" name="title" />
           </div>
           <ErrorMessage name="title" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Author
+            <span className="form-field-label">
+              Author
+            </span>
             <Field type="text" name="author" />
           </div>
           <ErrorMessage name="author" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Page
+            <span className="form-field-label">
+              Page
+            </span>
             <Field type="text" name="page" />
           </div>
           <ErrorMessage name="page" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Line
+            <span className="form-field-label">
+              Line
+            </span>
             <Field type="text" name="line" />
           </div>
           <ErrorMessage name="line" component="div" className="error-message" />
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Genre
+            <span className="form-field-label">
+              Genre
+            </span>
             <Field component="select" name="genre">
               <option disabled value="">——</option>
               {genres.map(genre => <option value={genre} key={genre}>{capitalize(genre)}</option>)}
@@ -50,20 +69,15 @@ const AddQuote = ({ isSubmitting }) => (
         </div>
         <div className="form-field">
           <div className="form-field-inner">
-            Type
+            <span className="form-field-label">
+              Type
+            </span>
             <Field component="select" name="type">
               <option disabled value="">——</option>
               {types.map(type => <option value={type} key={type}>{capitalize(type)}</option>)}
             </Field>
           </div>
           <ErrorMessage name="type" component="div" className="error-message" />
-        </div>
-        <div className="form-field">
-          <div className="form-field-inner">
-            Content
-            <Field type="text" name="content" component="textarea" className="content-input" />
-          </div>
-          <ErrorMessage name="content" component="div" className="error-message" />
         </div>
       </div>
       <button type="submit" disabled={isSubmitting} className="button btn-primary">

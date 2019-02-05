@@ -20,6 +20,12 @@ const initialValues = {
 
 // 'Yup' is a simple object validation library that works great with Formik forms!
 const addQuoteSchema = Yup.object().shape({
+  content: Yup
+    .string()
+    .min(2, 'Too short!')
+    .max(200, 'Too long!')
+    .typeError('Only normal characters allowed')
+    .required('Required'),
   title: Yup
     .string()
     .max(70, 'Too long!')
@@ -49,31 +55,25 @@ const addQuoteSchema = Yup.object().shape({
   type: Yup
     .string()
     .typeError('Only normal characters allowed'),
-  content: Yup
-    .string()
-    .min(2, 'Too short!')
-    .max(200, 'Too long!')
-    .typeError('Only normal characters allowed')
-    .required('Required'),
 });
 
 // Format input
 const formatInput = ({
+  content,
   title,
   author,
   page,
   line,
   genre,
   type,
-  content,
 }) => ({
+  content: replace(content.trim(), /"/g, "'"),
   title: replace(capitalize(title).trim(), /"/g, "'"),
   author: replace(capitalize(author).trim(), /"/g, "'"),
   page: parseInt(page),
   line: parseInt(line),
   genre: capitalize(genre),
   type: capitalize(type),
-  content: replace(content.trim(), /"/g, "'"),
 });
 
 const AddQuoteContainer = ({ addQuote, history }) => (
