@@ -127,7 +127,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 2,
-        date: 0,
+        date: 2,
       },
       {
         commentId: 1,
@@ -143,7 +143,7 @@ export default  [
         content: 'Comment content',
         userId: 'userId',
         claps: 12,
-        date: 2,
+        date: 0,
       },
     ],
   },

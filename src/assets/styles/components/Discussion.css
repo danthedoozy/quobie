@@ -36,6 +36,10 @@
   margin-bottom: 20px;
 }
 
+.sort-dropdown {
+  width: 100px;
+}
+
 @media (min-width: 360px) {
   .add-comment-textarea {
     width: 97%;

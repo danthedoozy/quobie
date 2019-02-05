@@ -11,8 +11,9 @@ Discuss your favorite book quotes (Genius for books).
 * Clap functionality
 * Report functionality
 * Build logic in 'AddComment' that attaches the current date (use Moment.js)
-* Sort hierarchy of comments by number of claps by default, but also include option for sorting by newest
-* Finish styling discussion page (meta/comments, and complete mobile responsiveness)
+* Refactor 'sortComments' function in 'Comments' to jive with Moment date/time implementation
+* Finish styling discussion page (meta/comments, and COMPLETE mobile responsiveness)
+
 * Allow the selection of multiple genres and types (How will this be implemented on the UI?)
 * Frontend logic for editing and deleting comment if userId is the same
 * Frontend logic for editing a quote if userId is the same

@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import Meta from './Meta';
 import Comments from './Comments';
 import AddComment from './AddComment';
+import CommentsHeader from './CommentsHeader';
 import quotes from '../../services/mock';
 import '../../assets/styles/components/Discussion.css';
 import '../../assets/styles/forms.css';
@@ -11,6 +12,7 @@ import '../../assets/styles/forms.css';
 class Discussion extends Component {
   state = {
     quote: {},
+    sort: 'popular',
   };
 
   componentDidMount = () => {
@@ -21,10 +23,15 @@ class Discussion extends Component {
 
   getQuote = id => quotes.filter(quote => quote.id === parseInt(id));
 
+  handleSort = ({ target: { value: sort }}) => {
+    this.setState({ sort });
+  };
+
   render() {
     const {
-      state: { quote },
+      state: { quote, sort },
       props: { addComment },
+      handleSort,
     } = this;
 
     return (
@@ -33,7 +40,8 @@ class Discussion extends Component {
           <Meta quote={quote} />
           <div className="discussion-comments">
             <AddComment quoteId={quote.id} addComment={addComment} />
-            <Comments comments={quote.comments || []} />
+            <CommentsHeader handleSort={handleSort} />
+            <Comments comments={quote.comments || []} sort={sort} />
           </div>
         </div>
       </div>
