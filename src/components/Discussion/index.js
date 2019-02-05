@@ -30,7 +30,6 @@ class Discussion extends Component {
       <div className="discussion">
         <Meta quote={quote} />
         <hr />
-        <h2>Comments</h2>
         <AddComment quoteId={quote.id} addComment={addComment} />
         <Comments comments={quote.comments || []} />
       </div>
