@@ -1,9 +1,9 @@
 import React from 'react';
 import { Form, Field, ErrorMessage } from 'formik';
+import { capitalize } from 'lodash';
 
+import { genres, types } from './categories';
 import '../../assets/styles/form.css';
-
-// ====== TODO: Lengthen 'content' box and decorate inputs in CSS ======
 
 const AddQuote = ({ isSubmitting }) => (
   <div>
@@ -34,9 +34,7 @@ const AddQuote = ({ isSubmitting }) => (
           Genre:
           <Field component="select" name="genre">
             <option disabled value="">——</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="fiction">Fiction</option>
-            <option value="sci-fi">Sci-fi</option>
+            {genres.map(genre => <option value={genre} key={genre}>{capitalize(genre)}</option>)}
           </Field>
           <ErrorMessage name="genre" component="div" className="error-message" />
         </div>
@@ -44,9 +42,7 @@ const AddQuote = ({ isSubmitting }) => (
           Type:
           <Field component="select" name="type">
             <option disabled value="">——</option>
-            <option value="motivational">Motivational</option>
-            <option value="inspirational">Inspirational</option>
-            <option value="prose">Prose</option>
+            {types.map(type => <option value={type} key={type}>{capitalize(type)}</option>)}
           </Field>
           <ErrorMessage name="type" component="div" className="error-message" />
         </div>

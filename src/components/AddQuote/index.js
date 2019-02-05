@@ -2,13 +2,11 @@ import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { withRouter } from 'react-router-dom';
-import { capitalize } from 'lodash';
+import { capitalize, replace } from 'lodash';
 
 import AddQuote from './AddQuote';
 import { checkForUrls } from '../../utils/strings';
 import '../../assets/styles/form.css';
-
-// ====== TODO: Display form in modal instead of route, add type and genre options list for mapping to DOM ======
 
 const initialValues = {
   title: '',
@@ -50,8 +48,7 @@ const addQuoteSchema = Yup.object().shape({
     .required('Required'),
   type: Yup
     .string()
-    .typeError('Only normal characters allowed')
-    .required('Required'),
+    .typeError('Only normal characters allowed'),
   content: Yup
     .string()
     .min(2, 'Too short!')
@@ -70,13 +67,13 @@ const formatInput = ({
   type,
   content,
 }) => ({
-  title: capitalize(title).trim(),
-  author: capitalize(author).trim(),
+  title: replace(capitalize(title).trim(), /"/g, "'"),
+  author: replace(capitalize(author).trim(), /"/g, ""),
   page: parseInt(page),
   line: parseInt(line),
   genre: capitalize(genre),
   type: capitalize(type),
-  content: content.trim(),
+  content: replace(content.trim(), /"/g, "'"),
 });
 
 const AddQuoteContainer = ({ addQuote, history }) => (

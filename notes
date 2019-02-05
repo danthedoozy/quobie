@@ -7,6 +7,18 @@ Discuss your favorite book quotes (Genius for books).
 4. Each quote has its own page, complete with discussions, claps, and sharing on social media
 5. Add quotes to your personal collection/board
 
+== TO DO ==
+* Style all inputs (content boxes and others)
+* Make quote cards truly mobile responsive
+* Style discussion page (meta and comments)
+* Turn '/add-quote' into a modal, rather than a route
+* Clap functionality
+* Report functionality
+* NAIL schema
+* Terms of Service
+* Allow the selection of multiple genres and types
+* Frontend logic for editing and deleting comment if userId is the same
+
 
 quote {
   id: number,
@@ -55,7 +67,7 @@ Special Functions
 MVP
 1. Quotes displaying all meta-data
 2. Add quotes
-3. Comment
+3. Comment (add, edit, delete -- if userId is same)
 4. Clap
 5. Report
 6. User accounts
