@@ -7,6 +7,7 @@ input {
   font-size: 16px;
   font-family: 'Aleo', serif;
   box-sizing: border-box;
+  box-shadow: 0px 0px 1px #eeeeee;
   border: none;
   outline: none;
 }
@@ -17,6 +18,7 @@ select {
   padding: 5px;
   font-size: 16px;
   font-family: 'Aleo', serif;
+  box-shadow: 0px 0px 1px #eeeeee;
   border: none;
   outline: none;
   background: #ffffff;
@@ -27,6 +29,7 @@ textarea {
   padding: 5px;
   font-size: 16px;
   font-family: 'Aleo', serif;
+  box-shadow: 0px 0px 1px #eeeeee;
   border: none;
   outline: none;
   resize: none;
