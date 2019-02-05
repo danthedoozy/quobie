@@ -8,7 +8,6 @@ Discuss your favorite book quotes (Genius for books).
 5. Add quotes to your personal collection/board
 
 === TO DO ===
-* Make quote cards truly mobile responsive
 * Style discussion page (meta and comments)
 * Turn '/add-quote' into a modal, rather than a route
 * Clap functionality
