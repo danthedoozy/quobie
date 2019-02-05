@@ -22,7 +22,7 @@ const AddQuote = ({ isSubmitting }) => (
         <div className="form-field">
           <div className="form-field-inner">
             <span className="form-field-label">
-              Title
+              Book Title
             </span>
             <Field type="text" name="title" />
           </div>

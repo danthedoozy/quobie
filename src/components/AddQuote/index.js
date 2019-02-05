@@ -92,6 +92,9 @@ const AddQuoteContainer = ({ addQuote, history }) => (
         if (checkForUrls(values.content)) {
           errors.content = 'No URLs';
         }
+        if (!values.page && values.line) {
+          errors.page = 'Needs a page number';
+        }
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
