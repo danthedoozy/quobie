@@ -20,8 +20,8 @@ Discuss your favorite book quotes (Genius for books).
 * Report functionality
 * NAIL the backend schema
 * Load more quotes/comments on scroll
-* Edit Quote API call and UI responsive updates
-* Edit/Delete comment API call and UI responsive updates
+* 'Edit' Quote API call and UI responsive updates
+* 'Edit/Delete' comment API call and UI responsive updates
 
 
 quote {

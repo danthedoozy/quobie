@@ -40,9 +40,9 @@ class App extends Component {
   };
 
   // Edit quote
-  editQuote = quoteId => {
+  editQuote = (userId, quoteId) => {
     // API call that edits quote if userId matches
-    if (this.state.user.id === quoteId) {
+    if (this.state.user.id === userId) {
       console.log(`${quoteId} has been edited`);
     }
   }
@@ -71,17 +71,17 @@ class App extends Component {
   };
 
   // Edit comment
-  editComment = commentId => {
+  editComment = (userId, commentId) => {
     // API call that edits comment if userId matches
-    if (this.state.user.id === commentId) {
+    if (this.state.user.id === userId) {
       console.log(`${commentId} has been edited`);
     }
   }
 
   // Delete comment
-  deleteComment = commentId => {
+  deleteComment = (userId, commentId) => {
     // API call that deletes comment if userId matches
-    if (this.state.user.id === commentId) {
+    if (this.state.user.id === userId) {
       console.log(`${commentId} has been deleted`);
     }
   }
