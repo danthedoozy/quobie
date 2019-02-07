@@ -13,7 +13,6 @@ Discuss your favorite book quotes (Genius for books).
 * Refactor 'sortComments' function in 'Comments' to jive with Moment date/time implementation, if needed
 * Allow the selection of multiple genres and types (How will this be implemented on the UI?)
 * Turn '/add-quote' into a modal, rather than a route
-* Pin footer to the bottom of the page
 * Terms of Service
 
 * NAIL the backend schema
@@ -21,6 +20,10 @@ Discuss your favorite book quotes (Genius for books).
 * Clap and Report functionality and API calls
 * 'Edit' Quote API call and UI responsive updates
 * 'Edit/Delete' comment API call and UI responsive updates
+
+
+=== CHORES ===
+* Pin footer to the bottom of the page
 
 
 quote {
@@ -70,8 +73,8 @@ Special Functions
 
 MVP
 1. Quotes displaying all meta-data
-2. Add quotes
-3. Comment (add, edit, delete -- if userId is same)
+2. Add quotes (edit -- if userId is the same)
+3. Comment (edit, delete -- if userId is same)
 4. Clap
 5. Report
 6. User accounts
@@ -82,4 +85,4 @@ FUTURE FEATURES (in order)
 3. Search and filtering options
 4. Save quotes to personal collections
 5. Other special functions (see above)
-6. Ads and/or affiliate marketing
+6. Ads and affiliate marketing
