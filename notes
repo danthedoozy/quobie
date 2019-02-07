@@ -16,10 +16,9 @@ Discuss your favorite book quotes (Genius for books).
 * Pin footer to the bottom of the page
 * Terms of Service
 
-* Clap functionality
-* Report functionality
 * NAIL the backend schema
 * Load more quotes/comments on scroll
+* Clap and Report functionality and API calls
 * 'Edit' Quote API call and UI responsive updates
 * 'Edit/Delete' comment API call and UI responsive updates
 
