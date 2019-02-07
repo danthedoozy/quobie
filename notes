@@ -7,25 +7,6 @@ Discuss your favorite book quotes (Genius for books).
 4. Each quote has its own page, complete with discussions, claps, and sharing on social media
 5. Add quotes to your personal collection/board
 
-=== TO DO ===
-* Finish styling discussion page (meta/comments, and COMPLETE mobile responsiveness)
-* Attach current date (use Moment.js) in 'AddComment'
-* Refactor 'sortComments' function in 'Comments' to jive with Moment date/time implementation, if needed
-* Allow the selection of multiple genres and types (How will this be implemented on the UI?)
-* Turn '/add-quote' into a modal, rather than a route
-* Terms of Service
-
-* NAIL the backend schema
-* Load more quotes/comments on scroll
-* Clap and Report functionality and API calls
-* 'Edit' Quote API call and UI responsive updates
-* 'Edit/Delete' comment API call and UI responsive updates
-
-
-=== CHORES ===
-* Pin footer to the bottom of the page
-
-
 quote {
   id: number,
   title: !string,
