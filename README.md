@@ -1,4 +1,4 @@
-# Quobie
+# quobie-ui
 
 ## Description
 Discuss, share, and discover quotes from great literature.
