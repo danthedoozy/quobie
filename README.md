@@ -1,7 +1,7 @@
 # quobie-ui
 
 ## Description
-Discuss, share, and discover quotes from great literature.
+Quobie's web user interface.
 
 ## Technologies Used
 
