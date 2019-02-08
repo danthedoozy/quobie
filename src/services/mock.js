@@ -9,6 +9,10 @@ export default  [
     content: 'The grass is greener on the other side.',
     claps: 23,
     id: 1,
+    user: {
+      userId: 0,
+      username: 'yoloswaggins',
+    },
     comments: [
       {
         commentId: 0,
@@ -46,6 +50,10 @@ export default  [
     content: "Don't give monkeys machine guns.",
     claps: 8,
     id: 2,
+    user: {
+      userId: 1,
+      username: 'bogochaggins',
+    },
     comments: [
       {
         commentId: 0,
@@ -83,6 +91,10 @@ export default  [
     content: 'Long was the night...',
     claps: 7,
     id: 3,
+    user: {
+      userId: 2,
+      username: 'pippinandmerry',
+    },
     comments: [
       {
         commentId: 0,
@@ -120,6 +132,10 @@ export default  [
     content: 'The grass is greener on the other side, unless, in actuality and reality, it is not. I guess in that case, you can just give up on anything nice in life.',
     claps: 23,
     id: 4,
+    user: {
+      userId: 3,
+      username: 'aragorn',
+    },
     comments: [
       {
         commentId: 0,
@@ -157,6 +173,10 @@ export default  [
     content: "Don't give monkeys machine guns.",
     claps: 8,
     id: 5,
+    user: {
+      userId: 4,
+      username: 'elrondthewise',
+    },
     comments: [
       {
         commentId: 0,
@@ -194,6 +214,10 @@ export default  [
     content: 'Long was the night...',
     claps: 7,
     id: 6,
+    user: {
+      userId: 5,
+      username: 'balrog',
+    },
     comments: [
       {
         commentId: 0,

@@ -13,7 +13,8 @@ const Meta = ({
     type,
     claps,
     id,
-  }
+    user,
+  },
 }) => (
   <div className="discussion-meta mb2">
     <h1>&ldquo;{content}&rdquo;</h1>
@@ -37,6 +38,13 @@ const Meta = ({
         </p>
         <p>
           <span className="tag-green small">{type}</span>
+        </p>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column">
+        <p className="small">
+          {`Submitted by ${JSON.stringify(user)}`}
         </p>
       </div>
     </div>
