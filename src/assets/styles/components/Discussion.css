@@ -10,7 +10,7 @@
 }
 
 .discussion-meta {
-  padding: 1% 15%;
+  padding: 1% 10%;
   background-color: #ffffff;
   box-shadow: 0px 0px 1px #eeeeee;
 }
@@ -20,7 +20,7 @@
 }
 
 .add-comment-textarea {
-  width: 240px;
+  width: 96%;
 }
 
 .discussion-comments ul {
@@ -51,6 +51,9 @@
   .discussion-inner {
     width: 70%;
   }
+  .discussion-meta {
+    padding: 1% 15%;
+  }
 }
 
 @media (min-width: 991px) {
@@ -59,8 +62,5 @@
   }
   .discussion-meta {
     padding: 3% 10%;
-  }
-  .add-comment-textarea {
-    width: 705px;
   }
 }
