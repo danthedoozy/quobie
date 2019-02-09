@@ -74,6 +74,8 @@ const formatInput = ({
   line: line ? parseInt(line) : '',
   genre: upperFirst(genre),
   type: upperFirst(type),
+  flags: 0,
+  hidden: false,
 });
 
 const AddQuoteContainer = ({ addQuote, history }) => (

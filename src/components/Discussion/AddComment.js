@@ -23,6 +23,9 @@ const formatInput = ({
   content,
 }) => ({
   content: content.trim(),
+  claps: 0,
+  flags: 0,
+  hidden: false,
 });
 
 const AddComment = ({ quoteId, addComment }) => (

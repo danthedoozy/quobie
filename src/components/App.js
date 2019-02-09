@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import moment from 'moment';
 import Nav from './Nav';
 import Discover from './Discover';
 import AddQuote from './AddQuote';
@@ -19,10 +20,12 @@ class App extends Component {
   };
 
   // Add a quote
-  addQuote = newQuote => {
-    newQuote.userId = this.state.user.id;
-    newQuote.flags = 0;
-    newQuote.hidden = false;
+  addQuote = quote => {
+    const newQuote = {
+      ...quote,
+      userId: this.state.user.id,
+      date: moment().unix(),
+    };
     // API call that adds a quote to the database -- console log data for now
     console.log(newQuote);
   }
@@ -48,12 +51,13 @@ class App extends Component {
   }
 
   // Add a comment
-  addComment = (newComment, quoteId) => {
-    newComment.userId = this.state.user.id;
-    newComment.quoteId = quoteId;
-    newComment.claps = 0;
-    newComment.flags = 0;
-    newComment.hidden = false;
+  addComment = (comment, quoteId) => {
+    const newComment = {
+      ...comment,
+      userId: this.state.user.id,
+      quoteId: quoteId,
+      date: moment().unix(),
+    };
     // API call that adds a comment to the database -- console log data for now
     console.log(newComment);
   }
