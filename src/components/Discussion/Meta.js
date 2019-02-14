@@ -43,9 +43,12 @@ const Meta = ({
     </div>
     <div className="columns">
       <div className="column">
-        <p className="small">
-          {`Submitted by ${JSON.stringify(user)}`}
-        </p>
+        {user ?
+          <p className="small">
+            {`Submitted by ${user.username}`}
+          </p>
+          : null
+        }
       </div>
     </div>
     <div className="columns">
