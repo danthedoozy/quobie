@@ -38,6 +38,7 @@
 
 .sort-dropdown {
   width: 100px;
+  cursor: pointer;
 }
 
 @media (min-width: 360px) {

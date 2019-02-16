@@ -6,13 +6,9 @@ import Comment from './Comment';
 // Comments could also have a 'See More' clickable for long comments
 
 const sortComments = (sort, comments) => {
-  switch (sort) {
-    case 'new':
-      // Will be rewritten after implementing Moment on dates/times
-      return comments.sort(({ date: a }, { date: b }) => b - a);
-    default:
-      return comments.sort(({ claps: a }, { claps: b }) => b - a);
-  }
+  return (sort === 'new') ?
+    comments.sort(({ date: a }, { date: b }) => b - a)
+    : comments.sort(({ claps: a }, { claps: b }) => b - a);
 };
 
 const Comments = ({ comments, sort }) => (
