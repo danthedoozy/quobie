@@ -26,7 +26,7 @@ const Quote = ({
   },
   history,
 }) => (
-  <div className="quote">
+  <div className="quote card">
     {formattedQuote(content)}
     <hr />
     <div className="columns is-spaced-between pb2">

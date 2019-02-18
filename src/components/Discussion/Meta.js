@@ -16,7 +16,7 @@ const Meta = ({
     user,
   },
 }) => (
-  <div className="discussion-meta mb2">
+  <div className="discussion-meta card mb2">
     <h1>&ldquo;{content}&rdquo;</h1>
     <hr />
     <div className="columns is-spaced-around pb3 text-align-left">

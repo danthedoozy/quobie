@@ -12,7 +12,6 @@
 .discussion-meta {
   padding: 1% 10%;
   background-color: #ffffff;
-  box-shadow: 0px 0px 1px #eeeeee;
 }
 
 .discussion-meta h3 {
@@ -31,7 +30,6 @@
   list-style: none;
   text-align: left;
   background-color: #ffffff;
-  box-shadow: 0px 0px 1px #eeeeee;
   padding: 30px;
   margin-bottom: 20px;
 }

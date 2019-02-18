@@ -7,7 +7,7 @@ import Report from '../mechanics/Report';
 // Comments will also have a 'See More' clickable for long quotes
 
 const Comment = ({ commentId, content, userId, claps, date }) => (
-  <li className="comment">
+  <li className="comment card">
     <div className="columns is-spaced-between">
       <div className="column">
         <p>{content}</p>
