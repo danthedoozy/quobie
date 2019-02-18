@@ -8,12 +8,16 @@ import Report from '../mechanics/Report';
 
 const Comment = ({ commentId, content, userId, claps, date }) => (
   <li className="comment">
-    <p>ID: {commentId}</p>
-    <p>Content: {content}</p>
-    <p>User: {userId}</p>
-    <p>Date: {date}</p>
-    <Clap claps={claps} />
-    <Report id={commentId} />
+    <div className="columns is-spaced-between">
+      <div className="column">
+        <p>{content}</p>
+        <p className="small">Submitted by {userId}</p>
+      </div>
+      <div className="column">
+        <Clap claps={claps} />
+        <Report id={commentId} />
+      </div>
+    </div>
   </li>
 );
 
