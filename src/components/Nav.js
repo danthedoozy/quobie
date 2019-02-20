@@ -7,12 +7,12 @@ import '../assets/styles/components/Nav.css';
 const Nav = ({ history, handleModalContent, addQuote, closeModal }) => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <a
+      <p
         className="brand"
         onClick={() => history.push('/')}
       >
         Quobie
-      </a>
+      </p>
     </div>
     <button className="add-button" type="button" onClick={() => handleModalContent(
       <AddQuote addQuote={addQuote} closeModal={closeModal} />
