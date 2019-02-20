@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import moment from 'moment';
 import Nav from './Nav';
 import Discover from './Discover';
-import AddQuote from './AddQuote';
 import Discussion from './Discussion';
 import Footer from './Footer';
+import StandardModal from './StandardModal';
 import quotes from '../services/mock';
 import '../assets/styles/components/App.css';
 
@@ -17,6 +17,8 @@ class App extends Component {
       username: 'Daniel Driskill',
     },
     clapCount: 0, // Figure out a way to allow only a certain number of claps per quote ID
+    modalIsOpen: false,
+    modalContent: null,
   };
 
   // Add a quote
@@ -90,22 +92,47 @@ class App extends Component {
     }
   }
 
+  afterOpenModal = () => {
+    console.log('afterOpenModal');
+  }
+
+  closeModal = () => {
+    this.setState({ modalIsOpen: false });
+  }
+
+  handleModalContent = content => {
+    this.setState({
+      modalContent: content,
+      modalIsOpen: true,
+    });
+  }
+
   render() {
-    const { addQuote, addComment } = this;
+    const {
+      state: {
+        modalIsOpen,
+        modalContent,
+      },
+      addQuote,
+      addComment,
+      handleModalContent,
+      afterOpenModal,
+      closeModal,
+    } = this;
     return (
       <div className="App">
         <Router>
           <Fragment>
-            <Nav />
+            <Nav
+              handleModalContent={handleModalContent}
+              addQuote={addQuote}
+              closeModal={closeModal}
+            />
             <Switch>
               <Route
                 exact
                 path="/"
                 render={() => <Discover quotes={quotes} />}
-              />
-              <Route
-                path="/add-quote"
-                render={() => <AddQuote addQuote={addQuote} />}
               />
               <Route
                 path="/discussion/:id"
@@ -115,6 +142,13 @@ class App extends Component {
             <Footer />
           </Fragment>
         </Router>
+        <StandardModal
+          modalContent={modalContent}
+          modalIsOpen={modalIsOpen}
+          afterOpenModal={afterOpenModal}
+          closeModal={closeModal}
+          content={modalContent}
+        />
       </div>
     );
   }

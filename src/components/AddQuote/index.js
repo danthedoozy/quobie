@@ -1,7 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { withRouter } from 'react-router-dom';
 import { replace } from 'lodash';
 
 import AddQuote from './AddQuote';
@@ -78,7 +77,7 @@ const formatInput = ({
   hidden: false,
 });
 
-const AddQuoteContainer = ({ addQuote, history }) => (
+const AddQuoteContainer = ({ addQuote, closeModal }) => (
   <div className="add-quote-form">
     <Formik
       initialValues={initialValues}
@@ -103,7 +102,7 @@ const AddQuoteContainer = ({ addQuote, history }) => (
         setSubmitting(false);
         addQuote(formatInput(values));
         alert('Your quote has been added!');
-        history.push('/');
+        closeModal();
       }}
     >
       {({ isSubmitting }) => <AddQuote isSubmitting={isSubmitting} />}
@@ -111,4 +110,4 @@ const AddQuoteContainer = ({ addQuote, history }) => (
   </div>
 );
 
-export default withRouter(AddQuoteContainer);
+export default AddQuoteContainer;
