@@ -37,10 +37,17 @@ textarea {
 
 /* Add Quote form */
 .add-quote-form {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
+  text-align: center;
+}
+.add-quote-form .form-field-label {
+  color: #ffffff;
+}
+.add-quote-form .error-message {
+  color: #ffffff;
 }
 
 .form-fields {
@@ -62,15 +69,18 @@ textarea {
 
 .form-field input {
   margin-left: 20px;
+  border-radius: 5px;
 }
 
 .form-field select {
   margin-left: 20px;
+  border-radius: 5px;
 }
 
 .form-field textarea {
   width: 185px;
   margin-left: 20px;
+  border-radius: 5px;
 }
 
 /* Sign Up / Sign In form */

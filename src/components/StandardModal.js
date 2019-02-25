@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import '../assets/styles/components/Modal.css';
+
 Modal.setAppElement('#app');
 
 const StandardModal = ({
@@ -13,6 +15,7 @@ const StandardModal = ({
     isOpen={modalIsOpen}
     onAfterOpen={afterOpenModal}
     onRequestClose={closeModal}
+    className='modal'
   >
     {content ? content: null}
   </Modal>

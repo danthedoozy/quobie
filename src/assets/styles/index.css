@@ -55,6 +55,16 @@ button:focus {
   color: #ffffff;
 }
 
+.btn-ghost {
+  background-color: Transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.btn-ghost:hover {
+  background-color: #ffffff;
+  color: #00d1b2;
+}
+
 hr {
   display: block;
   height: 1px;

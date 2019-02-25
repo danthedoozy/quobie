@@ -8,7 +8,7 @@ import '../../assets/styles/forms.css';
 const AddQuote = ({ isSubmitting }) => (
   <div>
     <h1>Share a quote!</h1>
-    <Form>
+    <Form autoComplete="off">
       <div className="form-fields">
         <div className="form-field">
           <div className="form-field-inner">
@@ -80,7 +80,7 @@ const AddQuote = ({ isSubmitting }) => (
           <ErrorMessage name="type" component="div" className="error-message" />
         </div>
       </div>
-      <button type="submit" disabled={isSubmitting} className="button btn-primary">
+      <button type="submit" disabled={isSubmitting} className="button btn-ghost">
         Submit
       </button>
     </Form>
