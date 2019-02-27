@@ -10,8 +10,8 @@ const Comment = ({ commentId, content, userId, claps, date }) => (
   <li className="comment card">
     <div className="columns is-spaced-between">
       <div className="column">
+        <p className="small">{userId}</p>
         <p>{content}</p>
-        <p className="small">Submitted by {userId}</p>
       </div>
       <div className="column">
         <Clap claps={claps} />

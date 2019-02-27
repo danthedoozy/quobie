@@ -64,6 +64,9 @@ button:focus {
   background-color: #ffffff;
   color: #00d1b2;
 }
+.btn-ghost-bold {
+  font-weight: bold;
+}
 
 hr {
   display: block;

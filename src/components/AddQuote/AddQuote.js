@@ -80,7 +80,7 @@ const AddQuote = ({ isSubmitting }) => (
           <ErrorMessage name="type" component="div" className="error-message" />
         </div>
       </div>
-      <button type="submit" disabled={isSubmitting} className="button btn-ghost">
+      <button type="submit" disabled={isSubmitting} className="button btn-ghost btn-ghost-bold">
         Submit
       </button>
     </Form>
