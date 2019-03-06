@@ -25,7 +25,9 @@ quote {
 
 user {
   id: number,
-  name: string,
+  username: string,
+  email: string,
+  password: hash,
   collections: object,
 }
 
@@ -33,6 +35,7 @@ collection {
   id: number,
   userId: number,
   quotes: array,
+  private: boolean,
 }
 
 comment {
