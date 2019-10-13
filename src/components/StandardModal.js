@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-import '../assets/styles/components/Modal.css';
+import '../styles/components/Modal.css';
 
 Modal.setAppElement('#app');
 

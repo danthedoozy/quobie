@@ -3,7 +3,7 @@ import { Form, Field, ErrorMessage } from 'formik';
 import { capitalize } from 'lodash';
 
 import { genres, types } from './categories';
-import '../../assets/styles/forms.css';
+import '../../styles/forms.css';
 
 const AddQuote = ({ isSubmitting }) => (
   <div>

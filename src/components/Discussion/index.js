@@ -6,8 +6,8 @@ import Comments from './Comments';
 import AddComment from './AddComment';
 import CommentsHeader from './CommentsHeader';
 import quotes from '../../services/mock';
-import '../../assets/styles/components/Discussion.css';
-import '../../assets/styles/forms.css';
+import '../../styles/components/Discussion.css';
+import '../../styles/forms.css';
 
 class Discussion extends Component {
   state = {

@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 import { checkForUrls } from '../../utils/strings';
-import '../../assets/styles/forms.css';
+import '../../styles/forms.css';
 
 const initialValues = {
   content: '',

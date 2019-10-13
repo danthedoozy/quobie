@@ -1,6 +1,6 @@
 import React from 'react';
 import Quotes from './Quotes';
-import '../../assets/styles/components/Discover.css';
+import '../../styles/components/Discover.css';
 
 const Discover = ({ quotes }) => (
   <section className="discover">

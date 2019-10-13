@@ -7,7 +7,7 @@ import Discussion from './Discussion';
 import Footer from './Footer';
 import StandardModal from './StandardModal';
 import quotes from '../services/mock';
-import '../assets/styles/components/App.css';
+import '../styles/components/App.css';
 
 class App extends Component {
   // This state is hypothetical (we will likely add some state management)

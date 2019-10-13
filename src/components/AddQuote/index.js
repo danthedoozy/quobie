@@ -5,7 +5,7 @@ import { replace } from 'lodash';
 
 import AddQuote from './AddQuote';
 import { checkForUrls, upperFirst } from '../../utils/strings';
-import '../../assets/styles/forms.css';
+import '../../styles/forms.css';
 
 const initialValues = {
   title: '',

@@ -2,7 +2,7 @@ import React from 'react';
 import AddQuote from './AddQuote';
 
 import { withRouter } from 'react-router-dom';
-import '../assets/styles/components/Nav.css';
+import '../styles/components/Nav.css';
 
 const Nav = ({ history, handleModalContent, addQuote, closeModal }) => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
